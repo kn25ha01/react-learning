@@ -84,6 +84,7 @@ CI/CDパイプラインを構築していないので、いずれの方法にお
 #### Fargate or EC2 (container)
 
 `sh build.sh prod`でコンテナをビルド後、名前とタグを変更して`ECR`にpushする。
+タスクを定義してコンテナを起動する。
 
 ---
 
