@@ -21,6 +21,7 @@ class Board extends React.Component {
       <Square
         value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)}
+        key={i}
         isHighlight={this.props.winnerLine ? this.props.winnerLine.includes(i) : false}
       />
     );
@@ -36,7 +37,7 @@ class Board extends React.Component {
         )
       }
       board.push(
-        <div className="board-row">
+        <div className="board-row" key={i}>
           {row}
         </div>
       );
